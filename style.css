@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+/* Halaman Awal */
+#halaman-awal {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 100px 50px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#halaman-awal h1 {
+  font-size: 90px;
+  margin-bottom: 20px;
+}
+
+#halaman-awal button {
+  background-color: white;
+  color: #4CAF50;
+  border: none;
+  padding: 10px 30px;
+  font-size: 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: fit-content;
+  margin: 0 auto;
+  display: block;
+}
+
+#halaman-awal button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Container Halaman Simulasi */
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+canvas {
+  margin-top: 20px;
+}
+
+.hasil-box {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simulasi Statistik Nilai Kuis</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Halaman Awal -->
+  <div id="halaman-awal">
+    <h1>Simulasi Nilai Kuis</h1>
+    <button onclick="mulaiSimulasi()">Mulai</button>
+  </div>
+
+  <!-- Halaman Simulasi -->
+  <div id="halaman-simulasi" class="container" style="display: none;">
+    <h2>Simulasi Statistik Dasar Nilai Kuis Mahasiswa</h2>
+
+    <label>Jumlah Mahasiswa:</label>
+    <input type="number" id="jumlah" min="1">
+
+    <label>Pilih Distribusi:</label>
+    <select id="distribusi">
+      <option value="uniform">Uniform</option>
+      <option value="normal">Normal</option>
+    </select>
+
+    <label>Nilai Minimum:</label>
+    <input type="number" id="min">
+
+    <label>Nilai Maksimum:</label>
+    <input type="number" id="max">
+
+    <button id="tombol-simulasi" onclick="simulasi()">Simulasi</button>
+
+    <h3>Hasil Simulasi:</h3>
+    <pre id="hasil" class="hasil-box"></pre>
+
+    <h3>Grafik Histogram Nilai</h3>
+    <canvas id="histogram"></canvas>
+
+    <div class="button-row">
+        <button onclick="kembaliKeHalamanAwal()" style="background-color: #607d8b;">&lt; Kembali</button>
+        <button onclick="resetInput()" style="background-color: #f44336;">Reset</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
